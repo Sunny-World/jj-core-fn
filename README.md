@@ -1,4 +1,7 @@
 # js工具函数（只要可以运行js的环境都可以支持，浏览器端、node都可以使用）
+
+## github : https://github.com/Javison666/jj-core-fn
+
 ## 引用库，后续 $fn 直接当作全局进行使用
 ```js
 import $fn from 'jj-core-fn'
