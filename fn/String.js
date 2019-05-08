@@ -22,6 +22,20 @@ class StringFn {
             return true
         }
     }
+    // 给url添加参数
+    urlAddParams(url, params){
+        if (typeof (url) == 'undefined' || url == null || url == '') {
+            return '';
+        }
+        if (typeof (params) == 'undefined' || params == null || typeof (params) != 'object') {
+            return url;
+        }
+        url += (url.indexOf("?") != -1) ? "" : "?";
+        for (var k in params) {
+            url += ((url.indexOf("=") != -1) ? "&" : "") + k + "=" + encodeURI(params[k]);
+        }
+        return url;
+    }
     /**
      * 将编码由utf8转为utf16
      * @param {需要编码的字符串} str 

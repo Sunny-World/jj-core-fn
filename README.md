@@ -31,6 +31,12 @@ $fn.s(null) //返回'--'
 ```js
 $fn.hasValue(null) //返回false
 ```
+### 给URL添加参数
+```js
+$fn.urlAddParams(url,{
+    user:'admin'
+})
+```
 ### 将编码由utf8转为utf16
 ```js
 $fn.utf8to16(str) 
