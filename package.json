@@ -1,12 +1,12 @@
 {
   "name": "jj-core-fn",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "useful js func",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack ./index.js --mode production",
-    "doc":"doctoc README.md"
+    "doc": "doctoc README.md"
   },
   "keywords": [
     "js"
