@@ -19,7 +19,7 @@ $fn.showMoney(1234) //返回12.34
 ```
 ### 千位符显示数字
 ```js
-$fn.showThousandMoney(123400) //返回1,234.00
+$fn.showThousandMoney(1234) //返回1,234.00
 ```
 ### 默认处理空字符串为'--'
 对undefined/null/''(空字符串)，返回默认想展示的内容defaultVal || '--'，否则返回原值
@@ -31,6 +31,23 @@ $fn.s(null) //返回'--'
 ```js
 $fn.hasValue(null) //返回false
 ```
+### 将编码由utf8转为utf16
+```js
+$fn.utf8to16(str) 
+```
+### 将编码由utf16转为utf8
+```js
+$fn.utf16to8(str) 
+```
+### 对字符串进行base64编码
+```js
+$fn.encodeBase64(str) 
+```
+### 对字符串进行base64解码
+```js
+$fn.decodeBase64(str) 
+```
+
 ### 时间自定义处理
 * YMDhms直接替换对应时间单位，格式可自由替换
 * 没有参数直接返回Y-M-D h:m:s(如2018-01-01 12:21:45)
