@@ -1,6 +1,6 @@
 {
   "name": "jj-core-fn",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "useful js func",
   "main": "index.js",
   "scripts": {
