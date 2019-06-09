@@ -1,4 +1,6 @@
 # js工具函数（适用所有环境）
+- 重要更新！核心模块以及本工具函数基于typescript重构以及api简化，原基于class api废弃，暴露的$fn为自2.0改为对象，
+- 现支持typescript,以及js直接在html中引用
 - github : https://github.com/Javison666/jj-core-fn
 - 只要可以运行js的环境都可以支持，浏览器端、node都可以使用
 - 引用库，后续 $fn 直接当作全局进行使用
