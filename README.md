@@ -6,7 +6,7 @@
     import $fn from 'jj-core-fn'
     ```
 - html直接引用
-    ```js
+    ```html
     <script src="jj-core-fn/common/$fn.js"></script>
     ```
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
@@ -29,6 +29,7 @@
   - [时间处理](#%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86)
     - [自定义格式](#%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A0%BC%E5%BC%8F)
     - [距离当前时间差处理](#%E8%B7%9D%E7%A6%BB%E5%BD%93%E5%89%8D%E6%97%B6%E9%97%B4%E5%B7%AE%E5%A4%84%E7%90%86)
+  - [请我喝杯果汁呗～](#%E8%AF%B7%E6%88%91%E5%96%9D%E6%9D%AF%E6%9E%9C%E6%B1%81%E5%91%97)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -103,3 +104,8 @@ $fn.showDate('Y-M',new Date('2018-01-01 12:21:45')) //返回2018-01
 ```js
 $fn.diffToNow(new Date()) //返回0秒
 ```
+
+
+## 请我喝杯果汁呗～
+
+![Image text](https://github.com/Javison666/jj-browser-fn/blob/master/image/alipay.jpg?raw=true)![Image text](https://github.com/Javison666/jj-browser-fn/blob/master/image/wechat.jpg?raw=true)
