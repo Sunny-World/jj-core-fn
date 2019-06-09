@@ -11,6 +11,7 @@
     ```html
     <script src="jj-core-fn/common/$fn.js"></script>
     ```
+- [浏览器环境js工具库请点击跳转](https://javison666.github.io/jj-browser-fn/)
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 - [js工具函数（适用所有环境）](#js%E5%B7%A5%E5%85%B7%E5%87%BD%E6%95%B0%E9%80%82%E7%94%A8%E6%89%80%E6%9C%89%E7%8E%AF%E5%A2%83)
