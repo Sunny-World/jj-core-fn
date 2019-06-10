@@ -5,8 +5,8 @@ export const NumberFn:NumberFace ={
      * @param {*} a 
      * @param {*} b 
      */
-    n(a, b?): number {
-        return /^[0-9]+.?[0-9]*$/.test(a) ? a : (b ? b : 0)
+    n(a, b?) {
+        return /^[0-9]+.?[0-9]*$/.test(a) ? Number(a) : (b ? b : 0)
     },
     /**
      * 数值转换为两位数的金额
