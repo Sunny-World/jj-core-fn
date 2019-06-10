@@ -5,7 +5,7 @@ export var NumberFn = {
      * @param {*} b
      */
     n: function (a, b) {
-        return /^[0-9]+.?[0-9]*$/.test(a) ? a : (b ? b : 0);
+        return /^[0-9]+.?[0-9]*$/.test(a) ? Number(a) : (b ? b : 0);
     },
     /**
      * 数值转换为两位数的金额
