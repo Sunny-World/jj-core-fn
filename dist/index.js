@@ -9,9 +9,9 @@ var __assign = (this && this.__assign) || function () {
     };
     return __assign.apply(this, arguments);
 };
-import NumberFn from './fn/Number';
-import StringFn from './fn/String';
-import DateFn from './fn/Date';
+import NumberFn from './fn/Number.js';
+import StringFn from './fn/String.js';
+import DateFn from './fn/Date.js';
 // 为了common导出随处可用的js
 export var $fn = __assign({}, NumberFn, StringFn, DateFn);
 // 供import导入使用

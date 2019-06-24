@@ -1,5 +1,5 @@
 import { NumberFace } from '@/util/interface.js'
-export const NumberFn:NumberFace ={
+export const NumberFn:NumberFace = {
     /**
      * 对非数字的内容，返回默认想展示的内容defaultVal || --
      * @param {*} a 
