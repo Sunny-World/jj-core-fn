@@ -13,7 +13,7 @@ export interface NumberFace {
     showThousandMoney(rmb: any): string;
 }
 export interface DateFace {
-    showDate(): string;
+    showDate(format?: string, time?: any): string;
     diffToNow(time: any): string;
     getIntervalDate(interval: any): string;
 }

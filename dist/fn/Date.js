@@ -13,19 +13,18 @@ export var DateFn = {
      * 没有参数直接返回Y-M-D h:m:s(如2018-01-01 12:21:45)
      * 有参数则直接替换
      */
-    showDate: function () {
+    showDate: function (format, time) {
         var now;
-        if (arguments.length == 2 && arguments[1] && String(new Date(arguments[1])) === 'Invalid Date') {
-            var arr = arguments[1].match(/\d+/g);
+        if (arguments.length == 2 && time && String(new Date(time)) === 'Invalid Date') {
+            var arr = time.match(/\d+/g);
             now = applyNew(Date, arr);
         }
         else if (arguments.length != 2) {
             now = new Date();
         }
         else {
-            now = new Date(arguments[1]);
+            now = new Date(time);
         }
-        // let now = arguments.length == 2 ? new Date(arguments[1]) : new Date();
         var year = now.getFullYear();
         var month = add0(now.getMonth() + 1);
         var date = add0(now.getDate());
@@ -36,25 +35,25 @@ export var DateFn = {
             return year + "-" + month + "-" + date + " " + hour + ":" + minute + ":" + seconds;
         }
         else if (arguments.length > 0) {
-            if (arguments[0].indexOf("Y") > -1) {
-                arguments[0] = arguments[0].replace(/Y/g, year);
+            if (format.indexOf("Y") > -1) {
+                format = format.replace(/Y/g, year);
             }
-            if (arguments[0].indexOf("M") > -1) {
-                arguments[0] = arguments[0].replace(/M/g, month);
+            if (format.indexOf("M") > -1) {
+                format = format.replace(/M/g, month);
             }
-            if (arguments[0].indexOf("D") > -1) {
-                arguments[0] = arguments[0].replace(/D/g, date);
+            if (format.indexOf("D") > -1) {
+                format = format.replace(/D/g, date);
             }
-            if (arguments[0].indexOf("h") > -1) {
-                arguments[0] = arguments[0].replace(/h/g, hour);
+            if (format.indexOf("h") > -1) {
+                format = format.replace(/h/g, hour);
             }
-            if (arguments[0].indexOf("m") > -1) {
-                arguments[0] = arguments[0].replace(/m/g, minute);
+            if (format.indexOf("m") > -1) {
+                format = format.replace(/m/g, minute);
             }
-            if (arguments[0].indexOf("s") > -1) {
-                arguments[0] = arguments[0].replace(/s/g, seconds);
+            if (format.indexOf("s") > -1) {
+                format = format.replace(/s/g, seconds);
             }
-            return arguments[0];
+            return format;
         }
     },
     /**

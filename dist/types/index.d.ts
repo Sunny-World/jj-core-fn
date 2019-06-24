@@ -1,5 +1,5 @@
 export declare const $fn: {
-    showDate(): string;
+    showDate(format?: string, time?: any): string;
     diffToNow(time: any): string;
     getIntervalDate(interval: any): string;
     s(a: any, b?: any): string;
