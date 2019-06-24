@@ -15,7 +15,7 @@ export interface NumberFace {
 }
 
 export interface DateFace {
-    showDate():string,
+    showDate(format?: string, time?:any):string,
     diffToNow(time):string,
     getIntervalDate(interval):string
 }
